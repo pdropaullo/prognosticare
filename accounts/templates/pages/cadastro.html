@@ -20,29 +20,36 @@
     <script defer src="{% static 'js/jquery.mask.js' %}"></script>
     <script defer src="{% static 'js/jquery.mask.min.js' %}"></script>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
-    <title>PrognostiCare - Login</title>
+    <title>PrognostiCare - Casdastro Login</title>
 </head>
 
 <body>
     <main>
         <div class="itens">
             <div class="titulo_ferramenta">
-                <h1>Login</h1>
+                <h1>Cadastre-se</h1>
             </div>
             <form class="infos_login" method="POST"> {% csrf_token %}
                 <div class="usuario_login">
                     <h2>Usuário:</h2>
-                    <input name="username" type="text" name="" id="" placeholder="Usuário">
+                    <input name="username" type="text" placeholder="Usuário">
+                </div>
+                <div class="email_login">
+                    <h2>Email:</h2>
+                    <input name="email" type="text" placeholder="E-mail">
                 </div>
                 <div class="senha_login">
                     <h2>Senha:</h2>
-                    <input name="password" type="password" name="" id="" placeholder="Senha">
+                    <input name="password" type="password" placeholder="Senha">
+                </div>
+                <div class="re-senha_login">
+                    <h2>Repitir Senha:</h2>
+                    <input name="re-password" type="password" placeholder="Repita a senha">
                 </div>
                 <div class="buttons">
-                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
             </form>
-            <a class="cadastre_se" href="{% url 'cadastro' %}">Cadastre-se!</a>
             {% if messages %}
             {% for message in messages %}
             <p class="alert alert-danger">{{ message }}</p>
