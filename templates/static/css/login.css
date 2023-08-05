@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+:root {
+    --celestial_blue: #3E92CC;
+    --lapis_lazulli: #2A628F;
+    --blue_hard: #13293D;
+    --prussian_blue: #16324F;
+    --indigo_dye: #18435A;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--celestial_blue);
+    display: flex;
+    color: white;
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 40rem;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.titulo_ferramenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    justify-content: space-evenly;
+}
+
+.infos_login {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario_login,
+.senha_login,
+.email_login,
+.re-senha_login {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+input {
+    width: 25rem;
+    padding-left: .5rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.btn-primary{
+    width: 25rem;
+    padding-left: .5rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.cadastre_se{
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.cadastre_se:hover{
+    cursor: pointer;
+    color: yellow;
+}
